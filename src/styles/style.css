@@ -1,0 +1,89 @@
+@import url('reset.css');
+
+:root {
+  font-size: 62.5%;
+
+  --text-weight: 400;
+  --title-weight: 700;
+
+  --default-link-color: #c4c4cc;
+  --active-link-color: #ffffff;
+
+  --text-color: #e1e1e6;
+
+  --bg-color: black;
+
+  --font: 'Roboto', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--font);
+
+  background-color: var(--bg-color);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+
+  padding: 4rem 7.2rem;
+}
+
+.navigation__list {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.navigation__link {
+  font-weight: var(--text-weight);
+  line-height: 2.2rem;
+  font-size: 2.2rem;
+  color: var(--default-link-color);
+
+  text-decoration: none;
+}
+
+.navigation__link--active {
+  font-size: 2.4rem;
+  font-weight: var(--title-weight);
+  color: var(--active-link-color);
+}
+
+.title {
+  font-weight: var(--text-weight);
+  font-size: 4.8rem;
+  line-height: 125%;
+  color: var(--text-color);
+}
+
+.text {
+  font-weight: var(--text-weight);
+  font-size: 1.8rem;
+  line-height: 160%;
+  color: var(--text-color);
+}
+
+.home {
+  background-image: url('../assets/bgHome.png');
+}
+
+.home__link {
+  padding: 1.2rem 3.2rem;
+  border: 2px solid var(--active-link-color);
+
+  font-weight: var(--title-weight);
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: var(--active-link-color);
+  text-transform: uppercase;
+}
+
+.universe {
+  background-image: url('../assets/bgUniverse.png');
+}
+
+.exploration {
+  background-image: url('../assets/bgExploration.png');
+}
