@@ -18,18 +18,19 @@
         <ul class="navigation__list">
           <li class="navigation__item">
             <a
-              class="navigation__link navigation__link--active"
-              href="src/pages/home.html"
+              data-nav-link
+              class="navigation__link"
+              href="/"
               >Home</a
             >
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="src/pages/universe.html"
+            <a data-nav-link class="navigation__link" href="/universe"
               >O Universo</a
             >
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="src/pages/exploration.html"
+            <a data-nav-link class="navigation__link" href="/exploration"
               >Exploração</a
             >
           </li>
@@ -38,5 +39,6 @@
     </header>
 
     <div id="app"></div>
+    <script src="src/js/index.js" type="module"></script>
   </body>
 </html>
